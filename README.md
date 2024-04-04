@@ -4,8 +4,11 @@ A little assignment to practice importing and analyzing data within a MongoDB da
 
 ## AirBnB [Listings](./data/listings.csv) In The City Of Newark, Essex County, NJ in CSV Format  
 
-## Sample From the listings.csv  
-table goes here
+## Sample From the listings.csv    
+id,last_scraped,source,name,description,host_id,host_name,host_since,host_location,host_is_superhost,host_listings_count,host_total_listings_count,neighbourhood,neighbourhood_cleansed,neighbourhood_group_cleansed,property_type,room_type,accommodates,bathrooms,bathrooms_text,bedrooms,beds,price,calendar_updated,has_availability,calendar_last_scraped
+| id | last_scraped | source | name | description | host_id | host_name | host_since | host_location | host_is_superhost | host_listings_count | host_total_listings_count | neighbourhood | neighbourhood_cleansed | neighbourhood_group_cleansed | property_type | room_type | accommodates| bathrooms | bathrooms_text | bedrooms | beds | price | calendar_updated | has_availability | calendar_last_scraped |
+ | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :-----| :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- |
+62033 | 2023-12-30 | city scrape | Home in Newark · ★4.86 · 1 bedroom · 1 bed · 1 bath |  | 301435 | Fred | 2010-11-27 | Newark, NJ | f | 1 | 1 | Newark | North |  | Private room in home | Private room | 1 |  | 1 bath |  | 1 | $80.00 |  | t | 2023-12-30 |    
 ## Scrubbing Process
 I developed a python program, using the csv module, to convert the data into an easily digestable list format, where every row of data was represented by a dictionary of values corresponding to the fields in the actual dataset. In running queries on the original **listings.csv** file, I also notice certain inconsistencies in some of the data cells that had to be fixed for the clarity of the results. For instance, "Newark" is regarded as one neighbourhood; however, there were a few inconsistent varieties of the way the same neighbourhood value was conveyed. Some cells added extra spaces, others differed in the capitalization schema. In order to remedy this, I had to standardize the data in this particular field. Where the neighbourhood was listed along with the state (New Jersey) as well as the country--both completely unneccessary--I updated the values, with python, so that only the neighbourhood as a String would appear. I.e. "Newark , NJ, United States" or "Newark, NJ, United States" was changed to just "Newark","Maplewood","Irvington", etc.
 # ANALYSIS(Queries)

@@ -52,3 +52,6 @@ with open("data/listings_clean.csv", "w") as output:
                 line += value + ","
         output.write(line)
         line = ""
+    
+    for value in all_data[0].values():
+        print(value+" | ",end="",sep="")
