@@ -14,6 +14,9 @@ with open("data/listings.csv","r") as file:
             elif "host" in field:
                 if field not in ("host_name","host_id","host_since","host_location","host_is_superhost","host_listings_count","host_total_listings_count"): #i.e. keep all the host related fields we want and scrap the rest
                     record[field] = "---"
+                else:
+                    if field == "host_location":
+                        record[field] = (record[field].split(","))[0]
             elif ("minimum" in field) or ("maximum" in field):
                 if (field != "minimum_nights") or (field != "maximum_nights"):
                     record[field] = "---"
@@ -33,25 +36,37 @@ with open("data/listings.csv","r") as file:
         for field,value in (record.copy()).items():
             if value == "---": #now remove all uneccessary fields
                 del record[field]
+   
 #write the updated dataset to a file named 'listings_clean.csv'
 with open("data/listings_clean.csv", "w") as output:
     headers = "" #first line
-    for key in all_data[1].keys():
-        headers += (str(key)+",")
-    headers += "\n"
+    for (index,key) in enumerate(list(all_data[1].keys())):
+        if index == len(list(all_data[1].keys()))-1:
+            headers += (str(key)+"\n")
+        else:
+            headers += (str(key)+",")
     output.write(headers)
-
+    
     line = ""
-    for row in all_data:
+    for row in all_data:##fix
         #create a list of all data for each field (of each row) that will dynamically change for each row
         data = list(row.values())
         for (index,value) in enumerate(data):
             if index == len(list(row.values()))-1:
-                line += value + "\n"
+                if value == '': #if there are any fields with an empty String for a value, set that value to "---" so empty values can be parsed correctly when writing to the CSV file
+                    line += "---" + "\n"
+                else:   
+                    line += value + "\n"
             else:
-                line += value + ","
+                if value == '':
+                    line += "---" + ","
+                else:
+                    line += value + ","
         output.write(line)
         line = ""
     
-    for value in all_data[0].values():
-        print(value+" | ",end="",sep="")
+    for row in all_data[11:21]:
+        for value in row.values():
+            print(value+" | ",end="",sep="")
+        print()
+        print()
