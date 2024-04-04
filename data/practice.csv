@@ -1,0 +1,31 @@
+id,host_id,host_name,name,price,neighborhood,host_is_superhost,beds,review_scores_rating,host_total_listings_count,minimum_nights
+051,9097,Carlos,Kennedy Homes,35344,South Orange,t,6,3,50,4
+340,5148,Alvaro,Dixon Homes,26782,South Orange,t,2,3,44,5
+660,4780,Christine,Boyd Homes,34139,South Orange,f,1,3,40,3
+977,3682,Chen,Saint Paul Homes,48939,Maplewood,t,9,3,39,3
+991,1334,Tanya,Hudson Homes,9320,South Orange,t,9,3,2,1
+953,4747,Lisa,Lighthouse Bay Homes,14459,Maplewood,t,2,3,5,3
+702,8745,Chen,Warrior Homes,20567,South Orange,t,1,2,11,3
+279,8232,Teneida,Pepper Wood Homes,46504,Maplewood,f,10,4,49,1
+584,1617,Patricia,Reindahl Homes,21460,Millington,f,4,2,34,2
+247,9811,Chen,Manufacturers Homes,1856,Irvington,f,5,3,19,4
+035,0880,Lisa,Oak Valley Homes,24132,Millington,f,4,4,4,2
+504,6473,Lisa,Ridgeway Homes,8600,South Orange,f,2,5,48,3
+331,1898,Patricia,Pierstorff Homes,11076,Irvington,f,9,5,26,5
+427,5298,Jakob,Arrowood Homes,11194,Maplewood,f,6,4,3,4
+745,5621,Jakob,Banding Homes,25243,Millington,f,3,2,12,5
+339,2153,Patricia,Carberry Homes,4584,Irvington,t,11,4,32,5
+067,1136,Jack,Burrows Homes,38994,Millington,t,10,1,28,2
+647,4234,Patricia,Oriole Homes,12611,South Orange,f,6,4,49,4
+300,5977,Alvaro,Bunting Homes,23090,Irvington,t,2,4,26,5
+393,6389,Chen,Mallory Homes,40184,South Orange,t,5,2,11,2
+386,6780,Alvaro,Cordelia Homes,7039,Irvington,t,3,5,49,3
+350,7270,Patricia,Nova Homes,28680,Irvington,f,8,4,45,5
+939,8684,Chen,Logan Homes,48383,Maplewood,f,9,3,5,2
+567,9931,Lisa,Shelley Homes,27151,South Orange,t,10,4,46,3
+735,8691,Carlos,Stone Corner Homes,42055,Newark,t,6,5,49,3
+331,3428,Jack,Mariners Cove Homes,37029,Irvington,f,11,5,16,4
+828,3015,Patricia,Sugar Homes,3308,Millington,f,3,2,9,3
+132,4805,Teneida,Anthes Homes,48776,Millington,t,11,4,17,5
+204,2463,Lisa,Lakewood Gardens Homes,19247,Maplewood,f,8,5,8,5
+194,9051,Jack,Michigan Homes,35538,Millington,t,7,3,33,4
