@@ -6,7 +6,6 @@ A little assignment to practice importing and analyzing data within a MongoDB da
 ## [MUNGED DATASET](./data/listings_clean.csv)
 
 ## Sample From the listings.csv    
-id,last_scraped,source,name,description,host_id,host_name,host_since,host_location,host_is_superhost,host_listings_count,host_total_listings_count,neighbourhood,neighbourhood_cleansed,neighbourhood_group_cleansed,property_type,room_type,accommodates,bathrooms,bathrooms_text,bedrooms,beds,price,calendar_updated,has_availability,calendar_last_scraped
 | id | last_scraped | source | name | description | host_id | host_name | host_since | host_location | host_is_superhost | host_listings_count | host_total_listings_count | neighbourhood | neighbourhood_cleansed | neighbourhood_group_cleansed | property_type | room_type | accommodates| bathrooms | bathrooms_text | bedrooms | beds | price | calendar_updated | has_availability | calendar_last_scraped |
  | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :-----| :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- |
 62033 | 2023-12-30 | city scrape | Home in Newark · ★4.86 · 1 bedroom · 1 bed · 1 bath |  | 301435 | Fred | 2010-11-27 | Newark, NJ | f | 1 | 1 | Newark | North |  | Private room in home | Private room | 1 |  | 1 bath |  | 1 | $80.00 |  | t | 2023-12-30 |
